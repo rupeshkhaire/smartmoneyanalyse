@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-tabular: "IBM Plex Sans", monospace;
+  
+  --color-income: #10b981; /* Emerald-500 */
+  --color-expense: #f43f5e; /* Rose-500 */
+  
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
+
+/* Custom styles for dark/light transitions and alignment */
+.font-tabular {
+  font-family: "IBM Plex Sans", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Glassmorphism details for premium theme styling */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.dark .glass {
+  background: rgba(21, 28, 44, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Neon glow details */
+.glow-income {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.15);
+}
+.glow-expense {
+  box-shadow: 0 0 20px rgba(244, 63, 94, 0.15);
+}
+.glow-brand {
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.15);
+}
